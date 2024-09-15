@@ -25,7 +25,7 @@ const Signup = () => {
             return handleError('name, email, password is required')
         }
         try {
-            const url="http://localhost:8080/auth/signup"
+            const url=`https://mern1-api-one.vercel.app/auth/signup`;
             const response=await fetch(url,{
                 method:"POST",  //method bta rhe hai ki post hai
                 headers:{'content-type':'application/json'},  //data sending in json formate 
