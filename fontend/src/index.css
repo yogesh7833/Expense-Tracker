@@ -17,6 +17,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .container{
   background-color: #FFF;
@@ -53,7 +54,7 @@ body{
   font-style: italic;
 }
 button{
-  background-color: purple;
+  background-color: blue;
   border: none;
   font-size: 15px;
   color: white;
@@ -63,15 +64,22 @@ button{
   margin: 10px 0;
 }
 
+
+
+
+
  /* expense triker css  */
 
 .user-section{
   display:flex;
   justify-content: space-between;
+  
 
  }
  .expense-list{
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
  }
  .expense-item{
   display: flex;
@@ -80,9 +88,10 @@ button{
   border-bottom: 1px solid #ccc;
 
  }
+ 
 .expense-description{
   font-weight: bold;
-
+  
 }
 .delete-button{
   background-color: #e74c3c;
@@ -92,8 +101,6 @@ button{
   font-size: 15px;
   cursor: pointer;
   border-radius: 3px;
-
-
 }
 
 .amounts-container{
@@ -108,6 +115,9 @@ button{
 .income-amount{
   color: #27ae60;
   font-weight: bold;
+}
+.your-balance{
+  font-size: 18px;
 }
 
 .expense-amount{

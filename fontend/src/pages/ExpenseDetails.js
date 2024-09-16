@@ -3,8 +3,8 @@ import React from 'react'
 const ExpenseDetails = ({incomeAmt,expenseAmt}) => {
   return (
     <div>
-        <div>
-            Your Balance is {incomeAmt-expenseAmt}
+        <div className='your-balance'>
+            <span >Your Balance is</span> {incomeAmt-expenseAmt}
         </div>
         <div className='amounts-container'>
             Income 
