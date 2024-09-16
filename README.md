@@ -1,1 +1,2 @@
-# mern1
+Expense Tracker
+An intuitive and user-friendly Expense Tracker application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This application allows users to easily manage their daily, weekly, and monthly expenses, providing a detailed view of spending habits. The project demonstrates the power of full-stack JavaScript development using MongoDB for the database, Express and Node.js for the backend, and React.js for the frontend.
