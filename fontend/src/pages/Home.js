@@ -44,7 +44,7 @@ const Home = () => {
   const fetchExpenses= async ()=>{
     try {
       //  const url=`${APIUrl}/expenses`;
-          const url='https://mern1-api-one.vercel.app/expenses'
+          const url=`https://mern1-api-one.vercel.app/expenses`
        const headers={
         headers:{'Authorization':localStorage.getItem('token')}
        } 
@@ -67,7 +67,7 @@ const Home = () => {
   const addExpenses= async (data)=>{
     try {
       //  const url=`${APIUrl}/expenses`;
-          const url='https://mern1-api-one.vercel.app/expenses'
+          const url=`https://mern1-api-one.vercel.app/expenses`
        const headers={
         headers:{'Authorization':localStorage.getItem('token'),
           'Content-Type':'application/json'
@@ -99,7 +99,7 @@ const Home = () => {
   const handleDeleteExpense=async (expenseId)=>{
     try {
       //  const url=`${APIUrl}/expenses`;
-          const url=`https://mern1-api-one.vercel.app/expenses/${expenseId}`
+          const url=`https://mern1-api-one.vercel.app/expenses/${expenseId}`;
        const headers={
         headers:{'Authorization':localStorage.getItem('token'),
           'Content-Type':'application/json'
