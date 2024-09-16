@@ -117,6 +117,7 @@ const Home = () => {
        const result=await response.json();
        console.log(result.data);
        setExpenses(result.data);
+       handleSuccess(result.message);
     } catch (error) {
       handleError(error);
     }
