@@ -1,4 +1,4 @@
-const { string } = require('joi');
+const { string, number, required } = require('joi');
 const mongoose=require('mongoose');
 
 const UserSchema=new mongoose.Schema({
@@ -14,7 +14,23 @@ const UserSchema=new mongoose.Schema({
     password:{
         type:String,
         required:true,
-    }
+    },
+    expenses:[
+        {
+            text:{
+                type:String,
+                required:true,
+            },
+            amount:{
+                type:Number,
+                required:true,
+            },
+            createdAt:{
+                type:Date,
+                default:Date.now(),
+            }
+        }
+    ]
 })
 
 const UserModel=mongoose.model('users',UserSchema);
